@@ -1,5 +1,4 @@
-﻿using GreenPipes;
-using MassTransit;
+﻿using MassTransit;
 using System;
 using System.Threading.Tasks;
 

@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <WarningsAsErrors>CS8600,CS8602,CS8603,CS8618,CS8625,CS8425,CA1068,CA2016</WarningsAsErrors>
     <RootNamespace>TemplateService.Tests</RootNamespace>
@@ -13,20 +13,19 @@
     <PackageReference Include="AutoBogus" Version="2.13.1" />
     <PackageReference Include="AutoFixture.AutoMoq" Version="4.17.0" />
     <PackageReference Include="AutoFixture.Xunit2" Version="4.17.0" />
-    <PackageReference Include="Bogus" Version="33.1.1" />
-    <PackageReference Include="FluentAssertions" Version="6.2.0" />
-    <PackageReference Include="FluentResults.Extensions.FluentAssertions" Version="0.6.0" />
-    <PackageReference Include="MassTransit.AspNetCore" Version="7.2.3" />
-    <PackageReference Include="MassTransit.RabbitMQ" Version="7.2.3" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="5.0.11" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.11" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.11" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
-    <PackageReference Include="VH.MiniService.Common.Tests" Version="1.0.0" />
-    <PackageReference Include="Moq" Version="4.16.1" />
-    <PackageReference Include="Moq.EntityFrameworkCore" Version="5.0.0.2" />
-    <PackageReference Include="xunit.core" Version="2.4.1" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+    <PackageReference Include="Bogus" Version="34.0.2" />
+    <PackageReference Include="FluentAssertions" Version="6.9.0" />
+    <PackageReference Include="FluentResults.Extensions.FluentAssertions" Version="2.1.0" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="8.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="7.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.4.1" />
+    <PackageReference Include="VH.MiniService.Common.Tests" Version="1.0.1-local-2023-01-17--23-58-35" />
+    <PackageReference Include="Moq" Version="4.18.4" />
+    <PackageReference Include="Moq.EntityFrameworkCore" Version="7.0.0.2" />
+    <PackageReference Include="xunit.core" Version="2.4.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>

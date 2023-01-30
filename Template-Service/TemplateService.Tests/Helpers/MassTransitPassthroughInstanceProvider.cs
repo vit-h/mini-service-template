@@ -1,10 +1,9 @@
-﻿using MassTransit.Registration;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using System;
 
 namespace TemplateService.Tests.Helpers
 {
-    public class MassTransitPassthroughInstanceProvider : IConfigurationServiceProvider
+    public class MassTransitPassthroughInstanceProvider : IServiceProvider
     {
         private readonly IServiceProvider _serviceProvider;
 

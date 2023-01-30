@@ -15,7 +15,7 @@ namespace TemplateService.Data
         /// <returns></returns>
         public static IServiceCollection AddDatabase(this IServiceCollection services, IConfiguration configuration)
         {
-            var options = configuration.GetSection(DatabaseOptions.SectionName).Get<DatabaseOptions>();
+            var options = configuration.GetSection(DatabaseOptions.SectionName).Get<DatabaseOptions>()!;
 
             if (!options.Enable)
                 return services;

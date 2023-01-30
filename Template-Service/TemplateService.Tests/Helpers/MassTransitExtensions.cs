@@ -1,6 +1,5 @@
 ﻿using VH.MiniService.Common.Service.MassTransit;
 using MassTransit;
-using MassTransit.ExtensionsDependencyInjectionIntegration;
 using MassTransit.Testing;
 using System;
 using System.Linq;
@@ -11,7 +10,7 @@ namespace TemplateService.Tests.Helpers
 {
     public static class MassTransitExtensions
     {
-        public static void AddConsumerTestHarnesses(this IServiceCollectionBusConfigurator cfg, Assembly consumerAssembly)
+        public static void AddConsumerTestHarnesses(this IBusRegistrationConfigurator cfg, Assembly consumerAssembly)
         {
             var genericMethod = typeof(DependencyInjectionTestingExtensions).GetMethod(
                                     name: nameof(DependencyInjectionTestingExtensions.AddConsumerTestHarness),
