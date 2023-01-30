@@ -1,7 +1,11 @@
 # EF Core Migrations via command line and dotnet tool
-No 'Package Manager Console' in VS for Mac
 
-### Instruction:
+### For DB first read documentation here https://learn.microsoft.com/en-us/ef/core/managing-schemas/scaffolding
+
+### Instruction for code first:
+
+* No 'Package Manager Console' in VS for Mac
+
 1. Install EF Tools: "dotnet tool install --global dotnet-ef" (update: "dotnet tool update --global dotnet-ef")
 
 2. Open Terminal at the TemplateService.Data root directory
@@ -24,4 +28,5 @@ No 'Package Manager Console' in VS for Mac
 - dotnet ef migrations remove
 
 ### More info:
+- https://learn.microsoft.com/en-us/ef/core/managing-schemas/migrations
 - https://www.entityframeworktutorial.net/efcore/cli-commands-for-ef-core-migration.aspx
